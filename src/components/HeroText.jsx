@@ -8,11 +8,14 @@ const HeroText = () => {
     visible: { opacity: 1, x: 0 },
   };
   return (
-    <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
+    <div className="z-0 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
       <div className="flex-col hidden md:flex c-space">
         <motion.h1
-          className="text-4xl font-medium"
+          className="text-4xl font-medium text-white"
+          style={{
+            textShadow: '0 0 20px rgba(249, 115, 22, 0.8), 0 0 40px rgba(249, 115, 22, 0.4)',
+          }}
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -22,7 +25,10 @@ const HeroText = () => {
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
-            className="text-5xl font-medium text-neutral-300"
+            className="text-5xl font-medium text-white"
+            style={{
+              textShadow: '0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.5)',
+            }}
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -38,11 +44,17 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-black text-white text-8xl"
+              className="font-black text-yellow-500 text-8xl drop-shadow-xl"
+              style={{
+                textShadow: '0 0 20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.9)',
+              }}
             />
           </motion.div>
           <motion.p
-            className="text-4xl font-medium text-neutral-300"
+            className="text-4xl font-medium text-white"
+            style={{
+              textShadow: '0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.5)',
+            }}
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -55,7 +67,10 @@ const HeroText = () => {
       {/* Mobile View */}
       <div className="flex- flex-col space-y-6 md:hidden">
         <motion.p
-          className="text-4xl font-medium"
+          className="text-4xl font-medium text-white"
+          style={{
+            textShadow: '0 0 20px rgba(249, 115, 22, 0.8), 0 0 40px rgba(249, 115, 22, 0.4)',
+          }}
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -65,7 +80,7 @@ const HeroText = () => {
         </motion.p>
         <div>
           <motion.p
-            className="text-5xl font-black text-neutral-300"
+            className="text-5xl font-black text-white"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -81,11 +96,14 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-white text-7xl"
+              className="font-bold text-yellow-500 text-7xl drop-shadow-2xl"
+              style={{
+                textShadow: '0 0 20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.9)',
+              }}
             />
           </motion.div>
           <motion.p
-            className="text-4xl font-black text-neutral300"
+            className="text-4xl font-black text-white"
             variants={variants}
             initial="hidden"
             animate="visible"

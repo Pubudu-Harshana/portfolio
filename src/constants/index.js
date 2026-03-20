@@ -1,3 +1,4 @@
+const base = typeof import.meta.env.BASE_URL !== 'undefined' ? import.meta.env.BASE_URL : '/';
 export const myProjects = [
   {
     id: 1,
@@ -12,27 +13,27 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: `${base}assets/projects/accessories.jpg`,
     tags: [
       {
         id: 1,
         name: "C#",
-        path: "/assets/logos/csharp.svg",
+        path: `${base}assets/logos/csharp.svg`,
       },
       {
         id: 2,
         name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        path: `${base}assets/logos/dotnet.svg`,
       },
       {
         id: 3,
         name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        path: `${base}assets/logos/efcore.png`,
       },
       {
         id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${base}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -49,7 +50,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+  image: `${base}assets/projects/auth-system.jpg`,
     tags: [
       {
         id: 1,
@@ -86,7 +87,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+  image: `${base}assets/projects/blazor-app.jpg`,
     tags: [
       {
         id: 1,
@@ -123,7 +124,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+  image: `${base}assets/projects/game-engine.jpg`,
     tags: [
       {
         id: 1,
@@ -160,7 +161,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+  image: `${base}assets/projects/wordpress-theme.jpg`,
     tags: [
       {
         id: 1,
@@ -197,7 +198,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+  image: `${base}assets/projects/elearning.jpg`,
     tags: [
       {
         id: 1,
@@ -222,24 +223,28 @@ export const myProjects = [
     ],
   },
 ];
+  
+  // Socials
+  // ...removed duplicate base declaration...
+  export const mySocials = [
+    {
+      name: "Instagram",
+      src: `${base}assets/socials/instagram.svg`,
+      link: "https://www.instagram.com/pubudu_.h",
+    },
+    {
+      name: "LinkedIn",
+      src: `${base}assets/socials/linkedIn.svg`,
+      link: "https://www.linkedin.com/in/pubuduh/",
+    },
+    {
+      name: "WhatsApp",
+      src: `${base}assets/socials/whatsApp.svg`,
+      link: "https://wa.me/94710594305",
+    },
+  ];
 
-export const mySocials = [
-  {
-    name: "WhatsApp",
-    href: "https://wa.me/94710594305",
-    icon: "/assets/socials/whatsApp.svg",
-  },
-  {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/pubuduh/",
-    icon: "/assets/socials/linkedIn.svg",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/pubudu_.h",
-    icon: "/assets/socials/instagram.svg",
-  },
-];
+// ...removed duplicate mySocials export...
 
 export const experiences = [
   {
